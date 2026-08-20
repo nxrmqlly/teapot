@@ -1,6 +1,6 @@
 # teapot
 
-HTTP/1.1 418 
+HTTP/1.1 418 I'm a teapot
 
 ```sh
 docker build -t teapot .

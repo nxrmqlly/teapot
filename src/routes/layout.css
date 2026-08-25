@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tea-background: #f2f6e1;
+  --color-tea-minty-green: #d4f2aa;
+  --color-tea-yellow-green: #f1fca3;
+  --color-tea-pale-green: #b2d580;
+  --color-tea-light-green: #78ad61;
+  --color-tea-olive: #4a6f3a;
+  --color-tea-dark-olive: #2d4822;
+}

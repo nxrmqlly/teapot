@@ -41,7 +41,11 @@
     </div>
 
     <div class="z-20 rsvp-btn mt-10">
-        <a href="#a">
+        <a
+            href="https://rsvp.soon.it/tea/"
+            rel="noopener noreferrer"
+            target="_blank"
+        >
             <RSVP />
         </a>
     </div>

@@ -1,11 +1,13 @@
 <script>
     import { onMount } from "svelte";
-    import { gsap, SplitText } from "$lib/gsap";
+    import { gsap } from "gsap";
+    import { SplitText } from "gsap/SplitText";
     import Logo from "$lib/components/Logo.svelte";
     import RSVP from "$lib/components/RSVP.svelte";
     import LeafRain from "$lib/components/LeafRain.svelte";
 
     onMount(() => {
+        gsap.registerPlugin(SplitText);
         let split = SplitText.create(".tagline-p", {
             type: "words",
         });

@@ -1,4 +1,4 @@
 {
-  "useTabs": false,
-  "tabSize": 42
+    "useTabs": false,
+    "tabWidth": 4
 }

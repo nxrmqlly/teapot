@@ -22,4 +22,7 @@ export default defineConfig({
             extensions: [".svelte"],
         }),
     ],
+    ssr: {
+        noExternal: ["gsap"],
+    },
 });

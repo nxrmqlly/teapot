@@ -8,7 +8,7 @@
     <span
         class="
         inner box-border inline-flex items-center gap-2
-        md:text-4xl text-tea-yellow-green font-instrument
+        text-3xl md:text-4xl text-tea-yellow-green font-instrument
         border-2 border-tea-dark-olive bg-tea-olive border-sol
         py-2.5 px-12 rounded-full
         ">RSVP Now <Plus /></span
@@ -18,12 +18,12 @@
 <style>
     .inner {
         transform: translateY(-0.2em);
-        transition: transform 0.1s ease;
+        transition: transform 0.2s ease;
     }
 
     .outer:hover .inner {
         /* pull upwards */
-        transform: translateY(-0.3em);
+        transform: translateY(-0.33em);
     }
 
     .outer:active .inner {

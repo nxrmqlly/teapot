@@ -37,7 +37,7 @@
 <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden">
     {#each leaves as leaf}
         <div
-            class="leaf absolute"
+            class="leaf absolute z-0"
             style="
                 left: {leaf.left}%;
                 width: {leaf.size}px;
@@ -49,7 +49,7 @@
                 --rotation: {leaf.rotation}deg;
             "
         >
-            <Leaf variant={leaf.variant} classes="h-full w-full" />
+            <Leaf variant={leaf.variant} classes="h-full w-full z-0" />
         </div>
     {/each}
 </div>

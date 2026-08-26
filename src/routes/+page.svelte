@@ -3,8 +3,6 @@
     import Logo from "$lib/components/Logo.svelte";
     import RSVP from "$lib/components/RSVP.svelte";
     import LeafRain from "$lib/components/LeafRain.svelte";
-    import HowItWorks from "$lib/components/HowItWorks.svelte";
-    import Faq from "$lib/components/Faq.svelte";
 
     onMount(async () => {
         const { gsap } = await import("gsap");

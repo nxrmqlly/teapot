@@ -3,12 +3,15 @@
     import Logo from "$lib/components/Logo.svelte";
     import RSVP from "$lib/components/RSVP.svelte";
     import LeafRain from "$lib/components/LeafRain.svelte";
+    import HowItWorks from "$lib/components/HowItWorks.svelte";
+    import Faq from "$lib/components/Faq.svelte";
 
     onMount(async () => {
         const { gsap } = await import("gsap");
         const { SplitText } = await import("gsap/SplitText");
+        const { ScrollTrigger } = await import("gsap/ScrollTrigger");
 
-        gsap.registerPlugin(SplitText);
+        gsap.registerPlugin(SplitText, ScrollTrigger);
 
         const split = SplitText.create(".tagline-p", {
             type: "words",
@@ -20,6 +23,20 @@
             filter: "blur(10px)",
             autoAlpha: 0,
             stagger: 0.05,
+        });
+
+        gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
+            gsap.from(el, {
+                duration: 0.6,
+                y: 24,
+                autoAlpha: 0,
+                ease: "power1.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    once: true,
+                },
+            });
         });
     });
 </script>
@@ -52,3 +69,6 @@
 </section>
 
 <LeafRain />
+
+<HowItWorks />
+<Faq />

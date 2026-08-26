@@ -58,7 +58,7 @@
 </script>
 
 <section
-    class="main relative top-0 flex items-center justify-center bg-tea-background z-10 w-screen h-[calc(100vh-3rem)] flex-col"
+    class="main relative top-0 flex items-center justify-center bg-tea-background z-10 w-screen h-screen flex-col"
 >
     <LeafRain />
 
@@ -88,11 +88,7 @@
     </div>
 </section>
 
-<section
-    class="info-sec bg-tea-pale-green pt-12
-    w-screen h-[calc(100vh)] sticky -top-12
-    z-20 rounded-t-[3rem] flex flex-col items-center"
->
+<section class="content-set bg-tea-pale-green">
     <h1
         class="italic teapot-stat-heading font-instrument text-7xl text-center pt-20 text-tea-dark-olive"
     >
@@ -136,15 +132,16 @@
     </div>
 </section>
 
-<section
-    class="bg-tea-background pt-12
-    w-screen h-[calc(100vh)] sticky -top-12
-    z-30 rounded-t-[3rem] flex flex-col items-center"
->
+<section class="content-set bg-tea-background">
     <div class="font-instrument text-3xl italic">hi this is wip</div>
 </section>
+
+<section class="content-set bg-tea-berry">
+    <div class="font-instrument text-3xl italic">hi this is wip</div>
+</section>
+
 <footer
-    class="h-60 bg-tea-olive flex flex-col items-center z-40 relative font-instrument text-3xl italic text-tea-pale-green"
+    class="content-set h-60! bg-tea-olive font-instrument text-3xl italic text-tea-pale-green"
 >
     insert footer here
 </footer>
@@ -164,5 +161,28 @@
     }
     .bonus {
         grid-area: bonus;
+    }
+
+    .content-set {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+
+    .content-set::before {
+        content: "";
+        position: absolute;
+        top: -3rem;
+        left: 0;
+        width: 100%;
+        height: 3rem;
+        border-radius: 3rem 3rem 0 0;
+        background: inherit;
     }
 </style>

@@ -88,7 +88,7 @@
     </div>
 </section>
 
-<section class="content-set bg-tea-pale-green">
+<section class="content-set bg-tea-pale-green info-sec">
     <h1
         class="italic teapot-stat-heading font-instrument text-7xl text-center pt-20 text-tea-dark-olive"
     >
@@ -140,10 +140,8 @@
     <div class="font-instrument text-3xl italic">hi this is wip</div>
 </section>
 
-<footer
-    class="content-set h-60! bg-tea-olive font-instrument text-3xl italic text-tea-pale-green"
->
-    insert footer here
+<footer class="content-set h-60! bg-tea-olive text-tea-pale-green">
+    <p class="font-instrument text-3xl italic">insert footer here</p>
 </footer>
 
 <style>
